@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <title>HtmlForm</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="form">
+            <div class="top">
+                <h1>Product Quantity Calculator</h1>
+                <p>Price should be correct</p>
+            </div>
+            <form>
+                <label for="product">Product Name</label>
+                <input type="text" id="pName" class="form-control" value="jordan 200">
+                <label for="product">Product Price</label>
+                <input type="text" name="pPrice" id="price" value="200">
+                <label for="product">Product Quantity</label>
+                <input type="text" name="pQuantity" id="quantity">
+                <input id="btn" type="button" value="Submit" class="submit">
+            </form>
+        </div>
+        <main>
+            <div class="display">
+                <table>
+                    <h3> Product in Cart</h3>
+                    <thead>
+                        <tr>
+                            <th>product Name </th>
+                            <th>product Price </th>
+                            <th>product Quantity </th>
+                        </tr>
+                    </thead>
+                    <tbody id="productTable" class="products">
+
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td>
+                                Total
+                            </td>
+                            <td id="total">
+
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
